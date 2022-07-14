@@ -1,25 +1,26 @@
 package com.revature.clash;
 
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
+import java.util.stream.DoubleStream;
+import java.util.stream.IntStream;
 
 public class ClashOfCode7 {
-    //output lowest odd number
+    // output lowest odd number
+    // i was going to solve this one correctly, but i missclicked and submitted early
     public static void main(String[] args) {
-        String line = "1 2 3 4 5 6 7 8 23 54 63 56 2345 6";
-
-        // Write an answer using System.out.println()
-        // To debug: System.err.println("Debug messages...");
-
-        System.out.println("answer");
+        String line = "4 2 11 4 94 6 33 8 23 54 63 56 2345 6";
 
         String[] s = line.split(" ");
-        int[] i = new int[line.length()];
-        List ss = Arrays.asList(i);
+        List<Integer> l = new ArrayList<>();
+        for(String s1: s){
+            l.add(Integer.parseInt(s1));
+        }
+        Collections.sort(l);
 
-        for(int z = 0; z < ss.size(); z++){
-            if(Integer.parseInt(ss.get(z).toString())  % 2 == 1){
-                System.out.println(i[z]);
+        for(int x: l){
+            if(x % 2 == 1){
+                System.out.println(x);
+                break;
             }
         }
     }
