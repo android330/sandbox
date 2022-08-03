@@ -13,7 +13,8 @@ public class ClashOfCode6 {
         }
         System.out.println(sb);
         */
+        boolean isPalendrome = s.equals(new StringBuilder(s).reverse().toString());
+        System.out.println(isPalendrome);
 
-        System.out.println(new StringBuilder(s).reverse());
     }
 }
