@@ -1,15 +1,10 @@
-package com.revature;
-
-import jdk.nashorn.internal.objects.annotations.Constructor;
-import jdk.nashorn.internal.objects.annotations.Function;
+package com.revature.junk;
 
 public class Junk3 extends A{
     @Override
     protected void Method1(){
 
     }
-
-
 }
 
 

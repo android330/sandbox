@@ -1,4 +1,4 @@
-package com.revature;
+package com.revature.junk;
 
 import java.util.ArrayList;
 import java.util.Arrays;

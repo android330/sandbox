@@ -1,4 +1,4 @@
-package com.revature;
+package com.revature.junk;
 
 import java.util.*;
 
@@ -23,10 +23,30 @@ public class junk1 {
         System.out.println(dup);
         */
 
-
+/*
         HashSet<Integer> hs = new HashSet<Integer>();
         for (int i: arr)
             hs.add(i);
         System.out.println(arr.length - hs.size());
+
+ */
+
+
+        List<String> list = new ArrayList<>();
+
+        list.add("asdfasdfasdf");
+        list.add("asdfijvni");
+        list.add("asdfio");
+        list.add("939u9u9ad9");
+
+        Collections.sort(list, (o1, o2) -> o2.length() - o1.length());
+
+        System.out.println(list);
+
+        LinkedList<Integer> ll = new LinkedList<>();
+
+        System.out.println(list.stream().reduce("", (a,b)-> String.valueOf(a.length() + b.length())));
+
+
     }
 }
