@@ -10,5 +10,7 @@ public class Junk2 {
         int total = Arrays.stream(arr).reduce(0, (a,b)-> b % 2 == 0 ? a+b : a-b);
 
         System.out.println(total);
+
+
     }
 }
